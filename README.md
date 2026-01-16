@@ -34,9 +34,26 @@ Frontend runs on http://localhost:3000
 
 ### Production
 
-Deploy backend to any Node.js hosting (Heroku, Railway, Render).
-Deploy frontend to Vercel or Netlify.
-Use MongoDB Atlas for database.
+**Live URLs**
+- Backend: https://predusk-1-i4sy.onrender.com
+- Frontend: Deploy to Vercel (see deployment section below)
+- Database: MongoDB Atlas
+
+**Backend Deployment (Render)**
+1. Push code to GitHub
+2. Create new Web Service on Render
+3. Connect GitHub repository
+4. Set build command: `cd backend && npm install`
+5. Set start command: `cd backend && npm start`
+6. Add environment variable: `MONGODB_URI`
+
+**Frontend Deployment (Vercel)**
+1. Install Vercel CLI: `npm install -g vercel`
+2. Navigate to frontend: `cd frontend`
+3. Login: `vercel login`
+4. Deploy: `vercel --prod`
+
+Alternatively, connect GitHub repo to Vercel dashboard and set root directory to `frontend`.
 
 ## Schema
 
