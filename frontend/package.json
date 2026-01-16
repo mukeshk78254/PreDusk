@@ -1,0 +1,11 @@
+{
+  "name": "predusk-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Predusk - Me-API Playground",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o"
+  },
+  "keywords": ["frontend", "html", "css", "javascript"],
+  "author": "",
+  "license": "MIT"
+}

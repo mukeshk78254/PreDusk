@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predusk - Developer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Predusk - Developer Profile</h1>
+        <p class="subtitle">Full Stack & Blockchain Development Portfolio</p>
+
+        <div class="stats" id="stats"></div>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search profiles, skills, projects...">
+                <button onclick="app.search()">Search</button>
+            </div>
+            <div class="filters">
+                <button class="filter-btn" onclick="app.loadProfile()">View Profile</button>
+                <button class="filter-btn" onclick="app.listAllProjects()">All Projects</button>
+                <button class="filter-btn" onclick="app.getTopSkills()">Top Skills</button>
+                <button class="filter-btn" onclick="app.filterBySkill('Python')">Python Projects</button>
+                <button class="filter-btn" onclick="app.filterBySkill('React')">React Projects</button>
+                <button class="filter-btn" onclick="app.filterBySkill('Blockchain')">Blockchain Projects</button>
+            </div>
+        </div>
+
+        <div class="results" id="results">
+            <div class="loading">Loading profile data...</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
