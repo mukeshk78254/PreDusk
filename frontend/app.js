@@ -1,7 +1,7 @@
 
 const API_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:5000' 
-    : 'https://predusk-backend.onrender.com';
+    : 'https://predusk-1-i4sy.onrender.com';
 
 class ProfileApp {
     constructor() {
